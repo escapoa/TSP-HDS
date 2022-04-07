@@ -1,0 +1,3171 @@
+﻿<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en-US"
+  class="wf-leaguegothic-n4-active wf-chivo-n4-active wf-chivo-n9-active wf-chivo-i4-active wf-chivo-i9-active wf-active"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      type="text/javascript"
+      async=""
+      src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/ga.js.הורדה"
+    ></script>
+    <script
+      src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/analytics.js.הורדה"
+      type="text/javascript"
+    ></script>
+
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style>
+      a {
+        color: white;
+      }
+
+      #page {
+        max-width: 60rem;
+        margin: 0 auto;
+      }
+
+      .toc {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        max-width: 30rem;
+        grid-gap: 0.5rem;
+        margin-bottom: 5rem;
+      }
+
+      .article-separator {
+        margin: 5rem 0;
+      }
+
+      img,
+      iframe,
+      video,
+      audio {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body
+    class="single single-post postid-625 single-format-standard post-introducing-the-stanley-parable-helpful-development-showcase"
+    style="background-color: #1a1a1b; color: white"
+  >
+    <section id="page">
+      <div
+        class="container"
+        style="font-family: Verdana, Arial, Helvetica, sans-serif"
+      >
+        <div id="content">
+          <h1>The Stanley Parable Helpful Development Showcase Archive</h1>
+          <div class="toc">
+            <span><a href="#doors">Doors</a></span
+            ><date class="meta">February 6, 2013</date>
+            <span><a href="#forklifts">Forklifts</a></span
+            ><date class="meta">February 13, 2013</date>
+            <span><a href="#mistakes">Mistakes</a></span
+            ><date class="meta">February 20, 2013</date>
+            <span><a href="#william-chat">William Chat (missing audio)</a></span
+            ><date class="meta">February 27, 2013</date>
+            <span><a href="#paradoxes">Paradoxes</a></span
+            ><date class="meta">March 6, 2013</date>
+            <span><a href="#self-review">Self Review</a></span
+            ><date class="meta">March 13, 2013</date>
+            <span><a href="#payment">Payment</a></span
+            ><date class="meta">March 20, 2013</date>
+            <span><a href="#time">Stalling for Time</a></span
+            ><date class="meta">March 28, 2013</date>
+            <span><a href="#press">Press</a></span
+            ><date class="meta">April 3, 2013</date>
+            <span><a href="#update">HDS Update</a></span
+            ><date class="meta">April 4, 2013</date>
+            <span><a href="#emotions">Emotions</a></span
+            ><date class="meta">April 17, 2013</date>
+            <span><a href="#secrets">SECRETSSSSSS</a></span
+            ><date class="meta">May 1, 2013</date>
+            <span><a href="#hidden-meaning">Hidden Meaning</a></span
+            ><date class="meta">May 15, 2013</date>
+            <span><a href="#pressure">Pressure</a></span
+            ><date class="meta">May 29, 2013</date>
+            <span><a href="#special-editions">Special Editions</a></span
+            ><date class="meta">June 13, 2013</date>
+            <span><a href="#communication">Communication</a></span
+            ><date class="meta">June 26, 2013</date>
+            <span><a href="#distribution">Distribution</a></span
+            ><date class="meta">July 10, 2013</date>
+            <span><a href="#signing-off">Signing Off</a></span
+            ><date class="meta">July 24, 2013</date>
+          </div>
+
+          <article>
+            <h3 class="title" id="doors">
+              Introducing: The Stanley Parable Helpful Development Showcase!
+            </h3>
+            <a
+              href="https://web.archive.org/web/20160924142700/http://www.galactic-cafe.com/2013/02/introducing-the-stanley-parable-helpful-development-showcase/"
+              title="Permalink to Introducing: The Stanley Parable Helpful Development Showcase!"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                width="100%"
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/banner1.png"
+              /><br />
+              <br />
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>
+              This week:
+              <strong>Creating doors that don’t kill the player</strong>
+            </p>
+            <p>
+              Though doors are generally recognized as being the cornerstone
+              that holds modern society together, what many people don’t realize
+              is that the same principle holds true in video games. The Stanley
+              Parable employs over a thousand doors (one thousand and two,
+              specifically) and if a single one is not functioning properly it
+              threatens the integrity of the entire game. That’s why we’re
+              making sure to go through and test each door thoroughly before
+              shipping it in the final game.
+            </p>
+            <p>
+              Today I’d like to walk you through the process of inspecting doors
+              to make sure they don’t murder the player for sport.
+            </p>
+            <p>
+              Here’s an example of a door from The Stanley Parable, as seen in
+              the Hammer level editor, which is being used to create the game:
+            </p>
+            <p>
+              <img
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/doors1.jpg"
+                width="100%"
+              />
+            </p>
+            <p>At first it looks just like any door in any game ever.</p>
+            <p><em>Oh!</em></p>
+            <p>you say,</p>
+            <p>
+              <em
+                >everything appears to be perfectly in order! A 100% functional
+                door! No need to do any sort of testing or inspection or further
+                investigation of this door in any capacity, however small!</em
+              >
+            </p>
+            <p>
+              Oh little fox, how ignorant you are of the world. Let’s run this
+              game and find out what would actually happen if someone were to
+              play it.
+            </p>
+            <p>
+              Here’s the player just walking along. Doot da doo, just gonna go
+              right through this door, that’s what I’m doing…
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/doors2.jpg"
+              />
+            </p>
+            <p>Just gonna go right onto the other side of – BAM!!</p>
+            <p>
+              <img
+                width="100%"
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/doors5.jpg"
+              />
+            </p>
+            <p>You see? Now do you see how wrong you were? About the door?</p>
+            <p><em>Oh my god, I didn’t know –</em></p>
+            <p>
+              Shh. I don’t need your excuses. I need solutions. Let’s look at
+              how we can fix this horrible problem that you would have ushered
+              unto the world if you were in charge.
+            </p>
+            <p>
+              First we’ll open up the level editor. There’s the door! Hello!
+            </p>
+            <p>
+              <img
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/doors6a.jpg"
+                width="100%"
+              />
+            </p>
+            <p>
+              Great, so far so good. Now we’ll double click on it to open up its
+              parameters.
+            </p>
+            <p>Aha! Here’s the problem!</p>
+            <p>
+              <img
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/doors7c.jpg"
+                width="100%"
+              />
+            </p>
+            <p>
+              You see? Its morality is set to “fuck humans.” With a setting like
+              that you can expect a relatively low likelihood of this door
+              treating humans like the clean, civilized, respectable creatures
+              that they are. Why don’t we adjust this setting to something less
+              unnecessarily hostile?
+            </p>
+            <p>
+              <img
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/doors7d.jpg"
+                width="100%"
+              />
+            </p>
+            <p>
+              Much better! Crisis averted. Now comes the task of going through
+              and adjusting this setting individually for each of the thousands
+              of doors (4,258 specifically) throughout The Stanley Parable. It’s
+              grueling work, but if we’re not careful it’s easy to overlook some
+              game-breaking gaffs, like the setting on this door that almost
+              passed under our radar earlier this week:
+            </p>
+            <p>
+              <img
+                src="./Introducing_ The Stanley Parable Helpful Development Showcase! _ Galactic-Cafe_files/doors8.jpg"
+                width="100%"
+              />
+            </p>
+            <p>
+              This door is a door. It is not a frog. Fool me once, as they say.
+            </p>
+            <p>
+              In the end, game design is about the details. If you’re not
+              applying that razor-sharp attention you run the risk of your game
+              being rude, demoralizing, or racist toward your players. That’s
+              not the kind of game we make, that’s a very different kind of
+              game, made by very different kinds of people. I don’t want to talk
+              about them. You weren’t implying we’re like them, were you?
+            </p>
+            <p><em>No, honestly, I never –</em></p>
+            <p>
+              Save it. You had your chance and you blew it. That ship has
+              sailed.
+            </p>
+            <p><em>Oh my god, please let me out of –</em></p>
+            <p>Shhhhhh.</p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="forklifts">
+              The Stanley Parable Helpful Development Showcase: Forklifts
+            </h3>
+            <a
+              href="https://web.archive.org/web/20160804010939/http://www.galactic-cafe.com/2013/02/the-stanley-parable-helpful-development-showcase-forklifts/"
+              title="Permalink to The Stanley Parable Helpful Development Showcase: Forklifts"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/banner1.png"
+              /><br />
+              <br />
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>
+              Let’s take a piece of reader mail, this one comes to us from
+              Franklin I. of Michigan:
+            </p>
+            <p>
+              <strong
+                >I’m starting to learn game design and the biggest hurdle I keep
+                running into over and over is knowing how many forklifts to put
+                into my game. Could you give me a specific number? It would be a
+                huge help, thanks!</strong
+              >
+            </p>
+            <strong> </strong>
+            <p><strong>-Franklin</strong></p>
+            <p>
+              Hey Franklin, let’s get one thing straight: There is no “specific
+              number.” The appropriate number of forklifts is an art, you hear
+              me? What I do is art. I’m an artist.
+            </p>
+            <p>
+              Okay! So now that we’ve gotten that out of the way let’s dig a bit
+              deeper into the correct amount of forklifts to place have in your
+              game. First, open up your map.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/forklifts1.jpg"
+              />
+            </p>
+            <p>
+              So far your game is pretty terrible. That doesn’t necessarily mean
+              you are terrible as a person, but it wouldn’t hurt to lose some
+              sleep thinking obsessively about it.
+            </p>
+            <p>Now let’s add a single forklift.</p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/forklifts2.jpg"
+              />
+            </p>
+            <p>Right now you’re probably thinking:</p>
+            <p>
+              <em>One forklift looks pretty good, time to add a second!</em>
+            </p>
+            <p>
+              Woah there cowboy! What did I just say about the number of
+              forklifts being an art? You can’t just rush into a decision like
+              that.
+            </p>
+            <p>
+              Why don’t we take some time simply to be with the number of
+              forklifts that are currently in the game? Let’s feel it out by
+              meditating on it our current game for one week.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/nature1.jpg"
+              />
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/nature2.jpg"
+              />
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/nature3.jpg"
+              />
+            </p>
+            <p>
+              Okay! One week should have passed since you were last here, so
+              let’s return to our map and see how we feel about it now.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/forklifts2.jpg"
+              />
+            </p>
+            <p>You’re right, it does need more forklifts.</p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/forklifts3.jpg"
+              />
+            </p>
+            <p>
+              Again, it’s important to take some time to feel out the emotional
+              weight of this decision. Let’s take another week of reflection and
+              deep self discovery.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/nature5.jpg"
+              />
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/nature8.jpg"
+              />
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/nature4.jpg"
+              />
+            </p>
+            <p>Hm.</p>
+            <p>In that week that just passed, something stirred in me.</p>
+            <p>Something profound. I feel…affected.</p>
+            <p>Is it the intangible nature of our mortality?</p>
+            <p>
+              Is my spirit swelling, ballooning the fabric that holds the
+              universe together?
+            </p>
+            <p>Who am I?</p>
+            <p>What is my purpose?</p>
+            <p>Life is so short.</p>
+            <p>…</p>
+            <p>
+              I don’t yet know what this all means, but there could be no better
+              way to express it than through the act of creation. I feel like I
+              finally see what this map is trying to become, let’s take it there
+              now:
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Helpful Development Showcase_ Forklifts _ Galactic-Cafe_files/forklifts4a.jpg"
+              />
+            </p>
+            <p>I’m an artist.</p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="mistakes">
+              Stanley Parable Dev Showcase: Making Mistakes
+            </h3>
+            <a
+              href="https://web.archive.org/web/20160527190627/http://www.galactic-cafe.com/2013/02/stanley-parable-dev-showcase-making-mistakes/"
+              title="Permalink to Stanley Parable Dev Showcase: Making Mistakes"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>
+              This week: <strong>Admitting that you’ve made mistakes</strong>
+            </p>
+            <p>
+              Almost everyone is human, which means that almost everyone makes
+              mistakes. Sure, the pain of making a mistake so wretched and
+              vicious it’s nearly unbearable, but it’s even more painful to have
+              to admit your mistake to others. Today I’m going to show you how
+              to communicate your errors to your teammates in a healthy and
+              graceful manner.
+            </p>
+            <p>
+              First let’s look at the mistake I made. The texture on this floor
+              needs to be carpet instead of wood. It’s a simple change.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M1.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>Instead, I accidentally delete the entire map.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M2.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>In a blind panic, I save the file. Everything is lost.</p>
+            <p>
+              I’ve made a mistake. Again, it’s important to remember that
+              everyone makes mistakes and you are still normal and that I love
+              you.
+            </p>
+            <p>
+              But it’s also important to regain composure and handle the
+              situation with precision if you want to do any damage control.
+              This can be resolved if we stay calm. Let’s think about the
+              situation logically:
+            </p>
+            <ol>
+              <li>Everything that was lost was inside the map file</li>
+              <li>
+                If the map file doesn’t exist, no one will know you deleted
+                everything in it
+              </li>
+            </ol>
+            <p>The only logical answer is to delete the map file.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M3.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>Perfect! Or is it?</p>
+            <p>
+              Look closer. Isn’t is suspicious that that’s the only missing map
+              file? Weren’t you supposed to be editing that particular map? If
+              anyone sees that this file is missing they’ll know without a doubt
+              that it was you who fucked up.
+            </p>
+            <p>Our only option is to delete the rest of the maps as well.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M4.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>Good, this is much better.</p>
+            <p>
+              But I’m still uneasy. I’m not worried about being caught, I’m
+              thinking about what kind of man I am. I’m a real man, I own a real
+              shirt, I built a house once. When I start something I follow
+              through, and right now this feels to me like a half-assed job.
+              That just doesn’t sit right in my stomach.
+            </p>
+            <p>I think I’m going to delete every file in the entire game.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M5.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>Be sure to empty the recycle bin!</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M6.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              Outstanding! You’ve just permanently erased every file from your
+              team’s shared Dropbox.
+            </p>
+            <p>High five yourself.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M7.jpg"
+                alt=""
+              />
+            </p>
+            <p>
+              Uh oh, here’s William, the lead level designer on Stanley Parable.
+              It seems he’s discovered my “mistake” and wants to talk. As a team
+              leader, this seems like a good opportunity for me to discuss the
+              game’s radical new direction with him.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M8.jpg"
+                alt=""
+              />
+            </p>
+            <p>
+              It seems he’s exhibiting a “negative” response to the news. Let’s
+              do some damage control: what can we say that will convince him
+              there’s no possible way you could have been responsible for
+              erasing the game?
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M9.jpg"
+                alt=""
+              />
+            </p>
+            <p>Well played.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M10.jpg"
+                alt=""
+              />
+            </p>
+            <p>Shit, he’s catching on. Damage control.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M11.jpg"
+                alt=""
+              />
+            </p>
+            <p>SAVED!</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Making Mistakes _ Galactic-Cafe_files/M12.jpg"
+                alt=""
+              />
+            </p>
+            <p>Next week, we’ll talk about hiring new team members.</p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="william-chat">
+              Stanley Parable Dev Showcase: A Fireside Chat with William Pugh!
+            </h3>
+            <a
+              href="https://web.archive.org/web/20160429070621/http://www.galactic-cafe.com/2013/02/stanley-parable-dev-showcase-a-fireside-chat-with-william-pugh/"
+              title="Permalink to Stanley Parable Dev Showcase: A Fireside Chat with William Pugh!"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ A Fireside Chat with William Pugh! _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>
+              This week: <strong>A fireside chat with William Pugh!</strong>
+            </p>
+            <p>
+              I thought we’d try something different this week. I sat down and
+              recorded a short conversation with William Pugh, who is doing most
+              of the actual level design and mapping for the new Stanley
+              Parable! In this installment we discussed how the two of us met
+              and what our initial expectations for the game were compared to
+              what ended up happening throughout development. We both learned a
+              lot about one another, souls were searched. I invite you to listen
+              in on this peek into our collaborative creative process!
+            </p>
+            <p>You can stream the chat here:</p>
+            <p class="audioplayer_container">
+              <span
+                style="
+                  display: block;
+                  padding: 5px;
+                  border: 1px solid rgb(221, 221, 221);
+                  background: rgb(248, 248, 248);
+                  visibility: visible;
+                "
+                id="audioplayer_1"
+                >Audio clip: Adobe Flash Player (version 9 or above) is required
+                to play this audio clip. Download the latest version
+                <a
+                  href="https://web.archive.org/web/20160429070621/http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
+                  onclick="javascript:_gaq.push([&#39;_trackEvent&#39;,&#39;outbound-article&#39;,&#39;https://web.archive.org/web/20160429070621/http://www.adobe.com&#39;]);"
+                  title="Download Adobe Flash Player"
+                  >here</a
+                >. You also need to have JavaScript enabled in your
+                browser.</span
+              >
+            </p>
+            <p>
+              <script type="text/javascript">
+                AudioPlayer.embed('audioplayer_1', {
+                  soundFile:
+                    'aHR0cDovL2dhbGFjdGljLWNhZmUuY29tL0hEUy9IRFMyLTIzLTEzLm1wMw',
+                })
+              </script>
+            </p>
+            <p>
+              Or download it
+              <a
+                href="https://web.archive.org/web/20160429070621/http://galactic-cafe.com/HDS/HDS2-23-13.mp3"
+                >here</a
+              >.
+            </p>
+            <p>
+              By the way,
+              <strong>please let me know what your response to this is</strong>.
+              These little chats are a nice break from the pressure of having to
+              write a new Helpful Development Showcase every week, I’m thinking
+              of once a month posting one of these talks between William and
+              myself. If you guys are keen on that then we’ll write that into
+              the schedule!
+            </p>
+            <p>Thanks everyone!</p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="paradoxes">
+              The Stanley Parable Dev Showcase: Paradoxes
+            </h3>
+            <a
+              href="https://web.archive.org/web/20160801034258/http://www.galactic-cafe.com/2013/03/the-stanley-parable-dev-showcase-paradoxes/"
+              title="Permalink to The Stanley Parable Dev Showcase: Paradoxes"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>Reader mail comes to us this week from Martin I. of Michigan:</p>
+            <p>
+              <strong
+                >I just played the Stanley parable and I have to tell you that
+                the story in your game is a wreck. It makes no logical sense,
+                contradicts itself, there’s no central consistency in even the
+                loosest sense of the word. Seriously did you even look at what
+                you were making?</strong
+              >
+            </p>
+            <p>
+              Thanks Martin, it’s always a pleasure to hear responses like
+              yours! Here at Galactic Café we take a lot of pride in creating
+              storylines that resemble trainwrecks, totally devoid of value,
+              impenetrable in every way, even bordering on spiteful toward the
+              player.
+            </p>
+            <p>
+              This week:
+              <strong
+                >How to actively sabotage the quality of your game’s
+                story</strong
+              >
+            </p>
+            <p>
+              Wrecking your own game isn’t just good for your players, it’s also
+              tremendously rewarding! To demonstrate, I’m going to start with a
+              video game whose narrative is extremely high quality, and work my
+              way down toward filth.
+            </p>
+            <p>
+              Here’s our example game.<br />
+              It features two characters, on the left is
+              <strong>Marsh</strong> and on the right is <strong>Chev</strong>.
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/paradox0.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              To see the story, let’s look at their characters’ Attributes. In
+              this case, Chev and Marsh’s Attributes determine their
+              relationship with one another.
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/paradox0b.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>This is a high quality story.</p>
+            <p>
+              If your goal is to deeply impact your players, to inspire them
+              with an emotional tale of the human condition, stop now. You won’t
+              get any better than this.
+            </p>
+            <p>
+              On the other hand, if you want a game that alienates and harasses
+              your players, causing them to feel weak and unloved in a cold,
+              brutal world, well then let’s continue!
+            </p>
+            <p>
+              We’re going to add another Attribute to Marsh to help confuse and
+              contradict the story.
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/Marsh1.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              Great! See how already the narrative has stopped making total
+              sense? That’s the effect that we’re looking for here.
+            </p>
+            <p>
+              But we’re only just getting started, let’s take it another step
+              forward.
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/Chev1.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p><em>What??</em></p>
+            <p>your players should be asking at this point,</p>
+            <p>
+              <em
+                >How can Marsh both love and not love Chev?? How can Chev love
+                Marsh and not actually know her?!?</em
+              >
+            </p>
+            <p>
+              This is an appropriate response, it means that we’re getting
+              closer to infuriating the player with a huge pile of narrative
+              nonsense. But someone stubborn enough could probably still make
+              some sort of artsy bullshit sense out of this game, so let’s push
+              it even further.
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/Marsh2.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              Fantastic, I think you’re getting the hang of it now! Keep going.
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/Chev2.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>YES. I LOVE IT. MORE!</p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/Marsh3.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              Hm. Okay, I think you stumbled a bit there, it’s actually totally
+              plausible that Marsh could be Swedish. In fact, if anything this
+              detail probably causes the story to make MORE sense. Could you
+              come up with something else?
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/Marsh4.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              Perfect! You can clearly see from the screenshot that Marsh has
+              arms, this Attribute sends us further into Nonsenseville.
+            </p>
+            <p style="word-break: break-all">
+              <em>UIHIWREHT872781FHNFDUIAS9I98HAAJFJKE</em>
+            </p>
+            <p>
+              …is probably what your players are thinking right now as they’re
+              playing your game. They came here for a normal, rational, coherent
+              story! And instead they got a life lesson about not trusting me to
+              give them something normal.
+            </p>
+            <p>That, and the story of Genghis Kahn.</p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/Chev3.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              Could we take this even further and confuse the story even more?
+              Of course we could, there is always more nonsense out there,
+              always new piles of shit to heap onto your work, always a greater
+              sense of sheer hatred you could be conveying to your players.
+              Believe in your dreams.
+            </p>
+            <p>
+              But this is just a tutorial, meant to get you started in the right
+              direction, to inspire you and your future work. So let’s stop here
+              and reflect on how far we’ve come. To actually step into the lives
+              of Chev and Marsh.
+            </p>
+            <p>Here is a screenshot of our game in action:</p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Paradoxes _ Galactic-Cafe_files/2013-03-02_00013.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>BELIEVE IN YOUR DREAMS.</p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="self-review">
+              Stanley Parable Dev Showcase: Self Review
+            </h3>
+            <a
+              href="https://web.archive.org/web/20160819141439/http://www.galactic-cafe.com/2013/03/stanley-parable-dev-showcase-self-review/"
+              title="Permalink to Stanley Parable Dev Showcase: Self Review"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>
+              This week:
+              <strong>A critical analysis of last week’s blog post</strong>
+            </p>
+            <p>
+              You may recall that in
+              <a
+                href="https://web.archive.org/web/20160819141439/http://www.galactic-cafe.com/2013/03/the-stanley-parable-dev-showcase-paradoxes/"
+                >last week’s installment of the Stanley Parable Helpful
+                Development Showcase</a
+              >, I explored narrative paradoxes and how to use them to make your
+              game objectively terrible.
+            </p>
+            <p>
+              I’m very upset to report that after careful consideration, it
+              seems that my presentation was incredibly flawed, and that much of
+              the information I presented as fact appears to have been an utter
+              fabrication. This week I would like to set the record straight by
+              explaining what exactly was misreported and to correct any logical
+              inconsistencies.
+            </p>
+            <p>Right off the bat I dropped this turd:</p>
+            <blockquote>
+              <p>
+                “<span style="color: #c0c0c0"
+                  >Wrecking your own game isn’t just good for your players, it’s
+                  also tremendously rewarding!</span
+                >“
+              </p>
+            </blockquote>
+            <p>
+              This is a boldface lie, actively sabotaging my game’s narrative is
+              in no way rewarding. In fact it’s one of the most emotionally
+              destructive things I’ve ever done.&nbsp;I wake up every morning in
+              cold sweats, I live the day in a nauseous haze, and I go to bed a
+              horrible, anxious, miserable shell of a human being.&nbsp;I can
+              directly attribute this to my work making my game’s story
+              terrible, and I apologize for leading people to think I enjoy it.
+            </p>
+            <p>
+              This is by far the most racist mistake that I made, and though
+              several other inaccuracies were nearly as racist, I feel like this
+              one deserves a specific apology.
+            </p>
+            <p>I then presented these two characters, named Chev and Marsh:</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/Marsh1.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>And made the following claim:</p>
+            <blockquote>
+              <p>
+                “<span style="color: #c0c0c0"
+                  >See how already the narrative has stopped making total sense?
+                  That’s the effect that we’re looking for here.</span
+                >“
+              </p>
+            </blockquote>
+            <p>
+              This too is a falsehood, the story in fact makes perfect sense.
+              “Love,” as referenced in the second Attribute, is the name of a
+              gay bar on 32nd street. While Marsh has deep affections for Chev,
+              she is not currently inside Love with him, nor is she in any gay
+              bar anywhere.
+            </p>
+            <p>
+              Again, I feel the racist undertones of this mistake deserves
+              specific acknowledgment.
+            </p>
+            <p>
+              There are a number of minor gaffs throughout the next several
+              lines (fluctuating in severity of racism), but in particular I
+              want to call attention to this statement, which I made toward the
+              end of the article:
+            </p>
+            <blockquote>
+              <p>
+                “<span style="color: #c0c0c0"
+                  >Could we take this even further and confuse the story even
+                  more? Of course we could, there is always more nonsense out
+                  there, always new piles of shit to heap onto your work, always
+                  a greater sense of sheer hatred you could be conveying to your
+                  players. Believe in your dreams.</span
+                >“
+              </p>
+            </blockquote>
+            <p>
+              This is perhaps the most egregious element of the entire blog
+              post, and I feel sickened for having posted it. The truth is that
+              there is no more nonsense in the world than what I depicted in
+              this article. I used all of it, saving none for others to aspire
+              to. I encouraged children to pursue even greater heights of
+              absurdity, knowing it was a futile task.
+            </p>
+            <p>
+              Not three hours after posting this, I received an email from a
+              small German child:
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/email.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              What have I done?? I filled a terminally ill child with hopes and
+              dreams for a future that he’ll never actually see. And then he’ll
+              die, like all animals.
+            </p>
+            <p>
+              Ashamed at what I had done, I hastily booked a plane to Germany to
+              see the child before he passed away.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/airplane.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              When I landed it turned out I had booked a flight to the wrong
+              Germany. I got on another plane.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/airplane2.jpg"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p></p>
+            <center><em>This photo was taken with my iPhone</em></center>
+            I arrived at the boy’s bedside moments before he died.
+            <p></p>
+            <p>
+              Next to him was a computer. He had been writing something. The
+              story, for a video game. “Oh please god,” I thought to myself,
+              “please let it be terrible. Please let Franz have created the
+              piece of shit he dreamed of. Please let me not have polluted his
+              final moments on this earth.” In a cold sweat, the dying boy at my
+              side, I read through his writing, his final testament to the
+              world.
+            </p>
+            <p style="text-align: center">
+              It was the most beautiful story I had ever read.<br />
+              Franz died in brutal agony.
+            </p>
+            <hr />
+            <p>
+              Franz may have been the first German boy whose life I ruined as a
+              result of something I posted on this blog, but with your help he
+              can also be the last. It is with this goal in mind that I have
+              founded the Franz Baumgaertner Memorial Fund.
+            </p>
+            <p></p>
+            <center>
+              <img
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/Franz-Logo.png"
+                alt=""
+                width="80%"
+              />
+            </center>
+            <center>
+              <br />
+              <img
+                class="alignleft"
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/stockphoto.jpg"
+                alt=""
+              />
+            </center>
+            &nbsp;
+            <p></p>
+            <p>&nbsp;</p>
+            <p>
+              The Franz Baumgaertner Memorial Fund will directly impact children
+              all over the world, children just like Franz, who believed in a
+              dream that was impossible. 100% of the funds we receive will go
+              toward educating children not to wish for something that’s
+              impossible, or stupid. Kids don’t know what’s good for them, and
+              together, we’ll keep it that way.
+            </p>
+            <form
+              action="https://web.archive.org/web/20160819141439/https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+            >
+              <input type="hidden" name="cmd" value="_s-xclick" /><br />
+              <input
+                type="hidden"
+                name="encrypted"
+                value="-----BEGIN PKCS7-----MIIHTwYJKoZIhvcNAQcEoIIHQDCCBzwCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYBdTjOmZDz23OF0e+pR0o4BTXWyNAtq4hzM0fE17agOI9q8xAjqhgWNuH3FqyWb2VhuLYkP5fbe1URXlKpsWAc7LeFxhIT3crT86YqNE3SIpliSaDPIum+ePiZW2a8PtxSSG8lvIz1hEi3UfpUsrhan7mQEvQ8fKOuJ7i9UPrue/DELMAkGBSsOAwIaBQAwgcwGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIJE6xhbK/T4mAgaglWMDwyvQIn4p3hLybIhYwEPFDF9Piy/IGtHgsC2AXCOGDgA5TWUho6iN3Pc2x0M42To2n9n06chEWwBQxynZEV9dN1wIa78X6sPEs8EJ2BzuHFIFr/rywvCEBHi83mNnH+fp3RwFtJdk/T19WVgLOwGkJbmhyJVHhWVrWw8cGV31eX56tXyFC7MhHgct5JNSpC5pC4kxCeHkX6c4eZB/6zY++51HUZiWgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzAzMTMxODU5MTFaMCMGCSqGSIb3DQEJBDEWBBRUlUTGbLxpsjPoUeYE1kvMdzlTQjANBgkqhkiG9w0BAQEFAASBgFS1Gfu7nfShNnzZrkU5dME5QPaWjqUEdES+ZN5pyypeSragGM0xIDsLCSbOqedPP8DDc8Hdk9T4ejny/wOPr72qkdgPNWkZYGsf44zXkSPHnW0FijXKq9CPNfaAxH1eOmUCV7+yGbMCBykmJ1XySjifwOusJxdfHaIpy23zvFLZ-----END PKCS7-----
+"
+              /><br />
+              <input
+                type="image"
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/btn_donateCC_LG.gif"
+                border="0"
+                name="submit"
+                alt="PayPal - The safer, easier way to pay online!"
+              /><br />
+              <img
+                alt=""
+                border="0"
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/pixel.gif"
+                width="1"
+                height="1"
+              /><br />
+            </form>
+            <p>&nbsp;</p>
+            <p style="text-align: center">
+              Please donate today.<br />
+              Please help us make sure that what happened to Franz never happens
+              again.
+            </p>
+            <p style="text-align: center">The responsibility is yours.</p>
+            <p></p>
+            <center>
+              <br />
+              <img
+                src="./Stanley Parable Dev Showcase_ Self Review _ Galactic-Cafe_files/franz1.jpg"
+                alt=""
+                width="70%"
+              />
+            </center>
+            <p></p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="payment">
+              Stanley Parable Dev Showcase: Payment
+            </h3>
+            <a
+              href="https://web.archive.org/web/20151012015502/http://www.galactic-cafe.com/2013/03/stanley-parable-dev-showcase-payment/"
+              title="Permalink to Stanley Parable Dev Showcase: Payment"
+              rel="bookmark"
+            ></a>
+
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Payment _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>This week we’ve got an email from Robert I. of Michigan:</p>
+            <p>
+              <strong
+                >The stanley parable was good but it was too short. I won’t pay
+                for the remake unless it’s longer.</strong
+              >
+            </p>
+            <p>
+              Don’t worry Robert, we’ve got you covered! Here at Galactic Café
+              know that when you spend money on a piece of entertainment you
+              expect to be occupied by that thing for a reasonable amount of
+              time. Besides, if you’re poor why would you want to waste more
+              time playing video games? Get a job, hippie.
+            </p>
+            <p>
+              This is why I’m pleased to announce that The Stanley Parable: HD
+              Remix will actually scale in length depending on how much money
+              you spend on it!
+            </p>
+            <p>
+              Let’s look at one example: Suppose that you spend, say, $10 on the
+              game. In that case, the narration in the game might sound
+              something like this:
+            </p>
+            <audio controls="controls">
+              <source src="speedA.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+              Now let’s suppose that you spent $50 on the game! WOAH!! You’re
+              after an experience! Here’s what you can expect that same line of
+              dialogue to sound like.
+            </p>
+            <audio controls="controls">
+              <source src="speedB.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+              You see, the more money you pay the longer the game will take. If
+              you’re really loaded, a single playthrough of the game could last
+              years!
+            </p>
+            <p>
+              Alternatively, you will be able to download the game for free, but
+              that same dialogue will sound like this:
+            </p>
+            <audio controls="controls">
+              <source src="speedC.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+              But of course there’s more than one way to affect the game’s
+              length. Loaded Lucy who spends generously on the game will find
+              that her character’s speed will be adjusted thusly:
+            </p>
+            <p>
+              <iframe
+                src="https://web.archive.org/web/20170919213356if_/http://www.youtube.com/embed/GLLcmPZs83U"
+                frameborder="0"
+                width="560"
+                height="315"
+              ></iframe>
+            </p>
+            <p>
+              Oh, but here’s Deadbeat Dana who couldn’t contribute more than a
+              dollar. Boo hoo Dana, way to spread the pain around. You’ll only
+              get to spend a few minutes playing Stanley Parable because this is
+              how fast your character will move through the game:
+            </p>
+            <p>
+              <iframe
+                src="https://web.archive.org/web/20170919213356if_/http://www.youtube.com/embed/uFxmvJfE1PQ"
+                frameborder="0"
+                width="560"
+                height="315"
+              ></iframe>
+            </p>
+            <p>
+              Beyond simply affecting the length of the game’s play time, we
+              also want to make the game a more pleasant experience for those
+              who pay more money. So if you pay above $20, at random times
+              throughout the game the Narrator will give you compliments! Here
+              is one example of a compliment he might give deliver:
+            </p>
+            <audio controls="controls">
+              <source src="complimentA.mp3" type="audio/mpeg" />
+            </audio>
+            <p>Another example of a possible compliment:</p>
+            <audio controls="controls">
+              <source src="complimentB.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+              Alternatively, if you choose to play the free version of The
+              Stanley Parable, this sound clip will play at random times
+              throughout the game:
+            </p>
+            <p class="audioplayer_container">
+              <span
+                style="
+                  display: block;
+                  padding: 5px;
+                  border: 1px solid rgb(221, 221, 221);
+                  background: rgb(248, 248, 248);
+                  visibility: visible;
+                "
+                id="audioplayer_6"
+                >Audio clip: Adobe Flash Player (version 9 or above) is required
+                to play this audio clip. Download the latest version
+                <a
+                  href="https://web.archive.org/web/20151012015502/http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
+                  onclick="javascript:_gaq.push([&#39;_trackEvent&#39;,&#39;outbound-article&#39;,&#39;https://web.archive.org/web/20151012015502/http://www.adobe.com&#39;]);"
+                  title="Download Adobe Flash Player"
+                  >here</a
+                >. You also need to have JavaScript enabled in your
+                browser.</span
+              >
+            </p>
+            <p>
+              <script type="text/javascript">
+                AudioPlayer.embed('audioplayer_6', {
+                  soundFile:
+                    'aHR0cDovL3d3dy5nYWxhY3RpYy1jYWZlLmNvbS9IRFMvcGF5bWVudC90ZXJyaWJsZXNvdW5kLm1wMw',
+                })
+              </script>
+            </p>
+            <p>
+              Next week we’ll talk about filing receipts from business expenses.
+            </p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="time">
+              Stanley Parable Dev Showcase: Stalling For Time
+            </h3>
+            <a
+              href="https://web.archive.org/web/20151012015506/http://www.galactic-cafe.com/2013/03/stanley-parable-dev-showcase-stalling-for-time/"
+              title="Permalink to Stanley Parable Dev Showcase: Stalling For Time"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                width="100%"
+                src="./Stanley Parable Dev Showcase_ Stalling For Time _ Galactic-Cafe_files/stallingfortime.png"
+              />
+            </p>
+            <p>
+              Although the weekly Stanley Parable Helpful Development Showcase
+              devblogs are a cherished weekly internet tradition, they are not
+              without a cost. They take time to make! And energy! And when
+              they’re really complex, both! So once a month, we’ll be Stalling
+              For Time with an update that was just a little bit easier for us
+              to make.
+            </p>
+            <p>
+              This week, similar to
+              <a
+                href="https://web.archive.org/web/20151012015506/http://www.galactic-cafe.com/2013/02/stanley-parable-dev-showcase-a-fireside-chat-with-william-pugh/"
+                >when we did this a month ago</a
+              >, I decided to sit down with William Pugh (the level designer for
+              The Stanley Parable) to talk about life and video games. But what
+              started with a simple inquiry evolved into an examination of our
+              relationship. Sides of one another we didn’t even know about were
+              revealed, at least one terribly lie was confessed for the first
+              time, and business transactions were made. It is an intensely
+              erotic* 20 minutes.
+            </p>
+            <p>You can stream it here:</p>
+            <audio controls="controls">
+              <source src="HDS3-21-13.mp3" type="audio/mpeg" />
+            </audio>
+            <p>
+              Or download it by
+              <a
+                href="https://web.archive.org/web/20151012015506/http://www.galactic-cafe.com/HDS/HDS3-21-13.mp3"
+                >putting your mouse button right here and clicking</a
+              >.
+            </p>
+            <p>*it is, in fact, the opposite of erotic.</p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="press">
+              Stanley Parable Dev Showcase: Press
+            </h3>
+            <a
+              href="https://web.archive.org/web/20151012015513/http://www.galactic-cafe.com/2013/04/stanley-parable-dev-showcase-press/"
+              title="Permalink to Stanley Parable Dev Showcase: Press"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>This week: <strong>Writing to the press</strong></p>
+            <p>
+              The role of promotion in game develop cannot be understated.
+              Seriously, go ahead, try.
+            </p>
+            <p>You see? Impossible.</p>
+            <p>
+              Because marketing is so instrumental in determining the success or
+              failure of your game, it’s important to maintain a healthy
+              relationship with members of the press. Creating a personal
+              connection with a journalist can be the difference between your
+              game becoming a huge hit and it being personally responsible for
+              the slaughter of thousands of innocent children in third-world
+              countries.
+            </p>
+            <p>
+              Let’s look at how I handle my relationships with the video game
+              press.
+            </p>
+            <p>
+              Suppose that I have some new bit of news about the development of
+              the Stanley Parable (I don’t. Don’t ask). I’m going to offer it to
+              <a
+                href="https://web.archive.org/web/20151012015513/http://kotaku.com/tag/kirk-hamilton"
+                >Kirk Hamilton</a
+              >
+              over at Kotaku as an exclusive piece. Offering these kinds of
+              exclusives helps sustain a connection between developer and
+              journalist, it tells them that you believe in what they’re doing.
+              Press is about creating that kind of lasting connection.
+            </p>
+            <p>
+              Before I send this email though, I’m going to do some heavy
+              drinking.
+            </p>
+            <p>
+              First up is a fifth of Jack Daniels. Not the whole thing
+              obviously, just enough to make it legally inadvisable for me to
+              get into the driver’s seat of a car.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/JD.jpg"
+              />
+            </p>
+            <p>
+              Next is most of a bottle of UV, flavored vodka, which is a great
+              way of letting people know that you like to drink but you also
+              have a great personality.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/UV2.jpg"
+              />
+            </p>
+            <p>
+              Now we’ll get classy. Just a few shots of Balblair, premium single
+              malt scotch whiskey.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/scotch.jpg"
+              />
+            </p>
+            <p>One of these, I guess.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/cocktail.jpg"
+              />
+            </p>
+            <p>Don’t even know what this is.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/strange.jpg"
+              />
+            </p>
+            <p>Now let’s finish off the JD.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/JD.jpg"
+              />
+            </p>
+            <p>Perfect!</p>
+            <p>Let’s sit down to write this email.</p>
+            <p>
+              <img
+                width="100%"
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/kirk.jpg"
+              />
+            </p>
+            <p>
+              This is the full text of the email I found in my gmail outbox the
+              next morning.
+            </p>
+            <p>This might be bad for the game’s press.</p>
+            <p>
+              It’s time to do some damage control. Kirk is a gentleman, an
+              upstanding and understanding kind of guy. I know that the two of
+              us can talk it out.
+            </p>
+            <p>
+              Let’s write him an email to try to smooth things over and bring
+              him back to our side:
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/kirk2.jpg"
+              />
+            </p>
+            <p>
+              Again, it’s all about creating a connection. Now that Kirk thinks
+              I love him, it will be impossible for him not to write some
+              glowing coverage of the Stanley Parable.
+            </p>
+            <p>Oh! We’ve gotten an email back from him!</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/kirk3.jpg"
+              />
+            </p>
+            <p>
+              It turns out that Kirk Hamilton’s email address is NOT
+              kirk@yahoo.com, so for now, it looks like I’m safe as far as press
+              for Stanley Parable.
+            </p>
+            <p>
+              But this other guy at kirk@yahoo.com is still a problem. I came on
+              pretty strong in that last email, and now he’s probably developing
+              feelings for me. We need to lay this beast to rest as gently as
+              possible.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/kirk4.jpg"
+              />
+            </p>
+            <p>
+              But he’s still trying to win me back. The next day I get this in
+              my inbox.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./Stanley Parable Dev Showcase_ Press _ Galactic-Cafe_files/kirk5.jpg"
+              />
+            </p>
+            <p>
+              You see, he’s playing hard to get, and I’m not falling for it. You
+              had your chance, kirk@yahoo.com, and you blew it. It’s too late
+              now, I’ve deleted him from my email contacts so that I’ll never be
+              able to write him again, never send him my thoughts when I’m
+              lonely, never fill that kirk@yahoo.com-shaped hole in my heart.
+            </p>
+            <p>Goodbye forever, old friend.</p>
+            <p>Goodbye.</p>
+            <p>I love you.</p>
+            <p>Next week: We get in touch with IGN@yahoo.com</p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="update">
+              An Update on the Helpful Development Showcases
+            </h3>
+            <a
+              href="https://web.archive.org/web/20151011094254/http://www.galactic-cafe.com/2013/04/an-update-on-the-helpful-development-showcases/"
+              title="Permalink to An Update on the Helpful Development Showcases"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              So I’ve been writing the Stanley Parable Helpful Development
+              Showcases once a week for a few months now, and while they’ve
+              gotten a great response, they are not without a cost. They take
+              time and energy, and I want to make sure that the quality and
+              effectiveness of these posts outweigh the costs of making them.
+            </p>
+            <p>
+              On a plane recently I began brainstorming new HDS topics, and I
+              found that consistently they were extremely negative! Like, how to
+              abuse your teammates, or how to abuse your fans, or whatever.
+              Eventually I looked down at the paper and wondered what I was
+              doing to myself that I could only think of these kinds of
+              incredibly brutal topics to write about! Perhaps I’m just not
+              having as much fun writing these as I used to?
+            </p>
+            <p>
+              Either way, I don’t think the stress of writing a new installment
+              every week is helping.
+              <strong
+                >So I’m going to be cutting back installments of the helpful
+                development showcase to one every two weeks.</strong
+              >
+            </p>
+            <p>
+              I hope this eases the pressure off me and gives me more energy to
+              make these on a consistent basis and have them still be fun and
+              interesting for people, rather than just background noise. And
+              honestly, if I ever think that what I’m making is just garbage,
+              I’ll stop writing them all together and not waste either of our
+              time. I want creation and enjoyment of those creations to be fun!
+              If it ever becomes a chore, we’ll change things up.
+            </p>
+            <p>
+              Anyway, thank you for understanding! I want my energy to go only
+              into making cool shit, and I’m still figuring out how to do that.
+              Thank you for riding this roller coaster with me, I have no idea
+              where it’s all going and I’m continually excited to find out!
+            </p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="emotions">
+              Stanley Parable Dev Showcase: Emotions
+            </h3>
+            <a
+              href="https://web.archive.org/web/20151011094641/http://www.galactic-cafe.com/2013/04/stanley-parable-dev-showcase-emotions/"
+              title="Permalink to Stanley Parable Dev Showcase: Emotions"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>This week: <strong>Creating games with emotion</strong></p>
+            <p>Time and time again, people ask me: “<em>Davey…why???</em>”</p>
+            <p>
+              This is followed by a lot of crying. Then, the person composes
+              themselves, and asks me the second most common question:
+            </p>
+            <p>“<em>How do you create a game with emotions?</em>”</p>
+            <p>
+              This is a question that people have been asking ever since video
+              games were first invented in 1993 by Mr. Games. The solution is
+              simple. It’s not enough to merely create a game with emotions in
+              it, you have to actually use your emotions to create the game
+              itself.
+            </p>
+            <p>
+              Let’s look at a demonstration of how we are creating the Stanley
+              Parable. I encourage you to follow along at home and try to make a
+              game for yourself using this methodology.
+            </p>
+            <p>
+              Here is a picture of me at my desk, in front of the game’s level
+              editor, ready to do work.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0366.jpg"
+              />
+            </p>
+            <p>
+              I’m going to start off by feeling ashamed of myself and everything
+              I’ve ever done in my life.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0370.jpg"
+              />
+            </p>
+            <p>Already you can see the map starting to come together.</p>
+            <p>
+              Now I’m going to take a step back weigh my perception of the
+              universe against the infinite collective perception of everyone
+              around me and how by the very nature of not directly experiencing
+              these modes of perception I internalize them as dangerous and
+              frightening, threatening to the identity that I have formed as an
+              individual which allows me to remain shallow and protected in a
+              perpetual bubble of self-inflicted ignorance.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0372.jpg"
+              />
+            </p>
+            <p>
+              Be careful as you attempt this one at home, if you feel it’s too
+              advanced for you there’s no shame in waiting until you have more
+              game development experience under your belt.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0395.jpg"
+              />
+            </p>
+            <p>Eating money, another pretty high-level emotion.</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0399.jpg"
+              />
+            </p>
+            <p>
+              I’m not exactly sure what emotion this is? I don’t think there’s a
+              word for it yet, I was mostly just improvising.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0406.jpg"
+              />
+            </p>
+            <p>The map is nearly complete now, don’t lose that good energy!</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0429.jpg"
+              />
+            </p>
+            <p>
+              And we’re done! That’s the creative process! This map is now ready
+              to ship. Be sure to relax and reward yourself for a hard day at
+              work.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/IMG_0431.jpg"
+              />
+            </p>
+            <p>
+              After creating a game using this methodology, you should actually
+              feel more deeply in touch with yourself as a person, able to
+              express yourself and demonstrate compassion for others to a depth
+              you never understood before, that kind of nonsense.
+            </p>
+            <p>
+              And finally, the most important part of making an emotional video
+              game: You get to award yourself
+              <strong
+                >The Official Video Games Are Art Developer Awareness Merit
+                Recognition Association Award</strong
+              >! This award is a tremendous honor, it adds a commemorative 4
+              years to your age on all official government documentation, and
+              once a year, you are allowed to steal one item from any store free
+              of repercussions! This year’s date will be announced soon, so
+              start thinking about what you will want to steal!
+            </p>
+            <p>
+              Membership also requires that you print and post this
+              commemorative 10’ x 10’ bumpersticker somewhere on your car,
+              bicycle, or other vehicle:
+              <a href="bs1.jpg"
+                >http://www.galactic-cafe.com/wp-content/uploads/2013/04/bs1.jpg</a
+              >
+            </p>
+            <p>
+              That’s it! Congratulations on making an emotional video! Art is
+              one of the most cherished elements of human culture. By making a
+              game you have contributed not just to Art, but to Art 2, which is
+              like Art only more emotional.
+            </p>
+            <p>Go forth my child, and create.</p>
+            <p><strong>UPDATE:</strong></p>
+            <p>
+              Shortly after posting this blog, I received an email from Heavy
+              Rain creator, David Cage:
+            </p>
+            <p>
+              <img
+                width="80%"
+                src="./Stanley Parable Dev Showcase_ Emotions _ Galactic-Cafe_files/davidcage.jpg"
+              />
+            </p>
+            <p>
+              David Cage’s claims are preposterous. Not only is this method not
+              his, it can be found in the appendix of any grade school-level
+              textbook on game design.
+            </p>
+            <p>
+              I won’t be bullied by David Cage, and I encourage you to join me
+              in this fight. Too many small developers making emotional games
+              have been absorbed into the David Cage empire, and it’s time we
+              stood up for ourselves. Together, we will be stronger than David
+              Cage could ever be.
+            </p>
+            <p>
+              Demonstrate your support for the
+              <strong
+                >No David Cage You Can’t Steal My Technique For Making Emotional
+                Games</strong
+              >
+              cause by printing and posting this 10’ x 10’ bumpersticker
+              somewhere on your car, bicycle, or other vehicle:
+              <a href="bs21.jpg"
+                >http://www.galactic-cafe.com/wp-content/uploads/2013/04/bs21.jpg</a
+              >
+            </p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="secrets">
+              The Stanley Parable Dev Showcase: Secrets
+            </h3>
+            <a
+              href="https://web.archive.org/web/20150922163737/http://www.galactic-cafe.com/2013/05/the-stanley-parable-dev-showcase-secrets/"
+              title="Permalink to The Stanley Parable Dev Showcase: Secrets"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Secrets _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <hr />
+            <p>
+              William Pugh is the level designer for The Stanley Parable, he
+              makes the game nice and pretty. Since the very first post on this
+              blog, he has pestered me on a near perpetual basis to allow him to
+              write his own Helpful Development Showcase blog post, and of
+              course I shoot him down every time because
+              <em
+                >which one of us wrote a successful video game oh wait it was me
+                get back to work William</em
+              >.
+            </p>
+            <p>
+              But this particular week, after what can only be described as a
+              combination of forgetfulness and wilful neglect of my duty as blog
+              writer, William stepped up to the plate and wrote an update. What
+              follows is copied straight out of the document he sent me, I will
+              be press ‘publish’ without actually looking at what he’s written,
+              just to humour him and because why not. This should be fun.
+            </p>
+            <p>-Davey</p>
+            <hr />
+            <p>
+              Hello my name is William Pugh co-creator of The Stanley Parable:
+              HD Remix, and while Davey Wreden (the other co-creator) is writing
+              these ridiculous blog posts I’m the one who’s
+              <strong>actually making the game.</strong>
+            </p>
+            <p>
+              Now both you and me know that these “Helpful Development
+              Showcases” don’t actually reveal anything about the ACTUAL Stanley
+              Parable game’s development process so I’m going to venture off
+              script here and tell you fools about what it’s REALLY LIKE TO MAKE
+              A GAME LIKE THE STANLEY PARABLE.
+            </p>
+            <p>
+              THIS WEEK’S SUBJECT IS:
+              <strong
+                >HOW TO HIDE SECRETS IN YOUR GAME WITHOUT TEAM MEMBERS FINDING
+                OUT ABOUT THEM</strong
+              >
+            </p>
+            <p>
+              So you want to put secrets in your game? But your uptight
+              co-workers don’t trust your creative instinct and your ability to
+              exercise self restraint? All you need to do is let them experience
+              your brilliance through discovery! Don’t tell them you’re hiding
+              secrets in their game!
+            </p>
+            <p>Okay here’s an example.</p>
+            <p>
+              This is the Corridor Ending (which is brand new to the Stanley
+              Parable HD Remix). Davey wrote it so that the player walks down
+              this corridor for ever and the only way for the player to end the
+              game is for him/her to stop walking. This sends some bullshit arty
+              farty message about the nature of struggling against your
+              surroundings and conflict and blah blah blah.
+            </p>
+            <p><strong>This is not how you make a good video game.</strong></p>
+            <p>
+              Davey doesn’t know this but I have ‘enhanced’ this ending with a
+              few special touches.
+            </p>
+            <p>
+              For instance, this is a video of how the ending normally plays.
+            </p>
+            <p>
+              <iframe
+                src="https://web.archive.org/web/20170919213356if_/http://www.youtube.com/embed/H8AgA3Aj5DM"
+                frameborder="0"
+                width="560"
+                height="315"
+              ></iframe>
+            </p>
+            <p>
+              But did you notice anything other than Davey’s questionable choice
+              of background music or his horrible ending concept?
+            </p>
+            <p>
+              Yes you’re right! That green secret wall painting is VERY
+              secretive looking!
+            </p>
+            <p>
+              Let’s have a look at what happens if we play this ending again but
+              after clicking on the secret painting.
+            </p>
+            <p>
+              <iframe
+                src="https://web.archive.org/web/20170919213356if_/http://www.youtube.com/embed/OggYoZ9Orxg"
+                frameborder="0"
+                width="560"
+                height="315"
+              ></iframe>
+            </p>
+            <p>Secret signs! Secret music! Secret sound effects!!</p>
+            <p>
+              That’s right – this ending has the signature of a genius all over
+              it, and that signature reads:
+              <strong><font size="5">WILLIAM WAS HERE!!!</font></strong>
+            </p>
+            <p>
+              Now I hear you thinking – “Man oh man, those secret signs, secret
+              music and secret sound effects showed me a whole new secret world
+              full of secrets!! How can I go back to playing the normal Stanley
+              Parable after that?”
+            </p>
+            <p>The answer is: YOU CAN’T!!!</p>
+            <p>
+              That’s right – once you click on the secret painting there is no
+              going back.
+            </p>
+            <p>
+              Every single section of the game will be full of secrets – ONCE
+              YOU GO SECRET YOU NEVER GO BECRET!!
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Secrets _ Galactic-Cafe_files/screen1.jpg"
+                alt=""
+                width="80%"
+              />
+            </p>
+            <p><font size="5">SECRETS!!!!!</font></p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Secrets _ Galactic-Cafe_files/screen2.jpg"
+                alt=""
+                width="80%"
+              />
+            </p>
+            <p style="word-break: break-all">
+              <font size="6">SECRETS!!!!!!!!</font>
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Secrets _ Galactic-Cafe_files/screen3.jpg"
+                alt=""
+                width="80%"
+              />
+            </p>
+            <p style="word-break: break-all">
+              <font size="7">SECRETSSSS!!!!!!!!!!!!</font>
+            </p>
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Secrets _ Galactic-Cafe_files/screen4.jpg"
+                alt=""
+                width="80%"
+              />
+            </p>
+            <p>Thanks for listening.</p>
+            <hr />
+            <p>UPDATE:</p>
+            <p>
+              Davey here, just finished reading. I’d like to issue a few
+              clarifications.
+            </p>
+            <p>
+              First, the Corridor Ending is not real. Never in a thousand years
+              would I write something so banal and superficial that doesn’t
+              speak to the true nature of struggle and universal indifference
+              that the individual must confront on a daily basis.
+            </p>
+            <p>
+              Second, let me take this moment to state definitively that The
+              Stanley Parable is NOT a game about secrets, nor do I intend to
+              allow secrets in the final game. I will be going through the game
+              and systematically deleting all of William’s hidden “secrets.” He
+              has grossly misrepresented this game’s intentions, and that
+              mistake will be reflected in his percentage of revenue share.
+            </p>
+            <p>
+              Please, please do not let this blog post be a reflection of the
+              true quality of The Stanley Parable.
+            </p>
+            <hr />
+            <p>UPDATE #2:</p>
+            <p>
+              This is William. The real secret is that I haven’t told Davey
+              where all of the actual secrets are hidden. THE STANLEY PARABLE
+              SECRETS FOR PRESIDENT 2013 DON’T STOP BELIEVING.
+            </p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="hidden-meaning">
+              The Stanley Parable Dev Showcase: Hidden Meaning
+            </h3>
+            <a
+              href="https://web.archive.org/web/20150915041247/http://www.galactic-cafe.com/2013/05/the-stanley-parable-dev-showcase-hidden-meaning/"
+              title="Permalink to The Stanley Parable Dev Showcase: Hidden Meaning"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>Noel I. of Michigan writes:</p>
+            <p><strong>tits</strong></p>
+            <p>Unbelievable.</p>
+            <p>
+              It took a full year and a half, since the original release of The
+              Stanley Parable in 2011, but someone finally got it. Someone
+              finally understands what The Stanley Parable is truly about.
+            </p>
+            <p>
+              Let me back up and explain, and I’ll walk you through the secret
+              meaning behind TSP that Noel has uncovered.
+              <strong
+                >This post will contain spoilers for
+                <a
+                  href="https://web.archive.org/web/20150915041247/http://www.moddb.com/mods/the-stanley-parable"
+                  >the original Stanley Parable</a
+                ></strong
+              >.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/Meaning1.jpg"
+              />
+            </p>
+            <p>Two choices. One will save you, one will kill you.</p>
+            <p>Or is that the full story?</p>
+            <p>
+              Because no matter which door you take, there is always death
+              waiting down some corridor, always some gruesome fate toward which
+              the Narrator will guide you. And then, no matter how you die, you
+              are returned to the start. Reborn.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/Meaning2.jpg"
+              />
+            </p>
+            <p>
+              You are a baby, returned to the womb. And when you emerge, what do
+              you find?
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/Meaning1.jpg"
+              />
+            </p>
+            <p>
+              Your mother’s teats, each one promising you sustenance, nutrition,
+              life.
+            </p>
+            <p>Or at least, that’s how it’s supposed to go.</p>
+            <p>
+              Because in this world, no matter what you choose you are led once
+              again back to the grave. Simply by choosing a door, by drinking
+              the milk from your mother’s breasts, you are doomed to die over
+              and over and over again.
+            </p>
+            <p>
+              Why? Perhaps because her breasts have been corrupted by the
+              influence of the male in this story, the Narrator. Patriarchy
+              oppresses, it denies the woman her say, her role. No matter how
+              she participates in this world, her child is taken from her and
+              condemned to die. Is the Narrator your father? Perpetually
+              attempting to wrest control of the fate of the family away from
+              the mother? I didn’t say that, you did.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/Meaning3.jpg"
+              />
+            </p>
+            <p>
+              When you are confronted by the crushers, and a female Narrator
+              steps in to speak, she warns Stanley. She knows the truth, she has
+              seen what society does to women. No matter which door, which
+              breast Stanley chooses, he is doomed. The only option is to leave
+              this world, as she says, “push escape and press quit.”
+            </p>
+            <p>But is there an escape?</p>
+            <p>Down one path is a hole in the ground.</p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/Meaning4.jpg"
+              />
+            </p>
+            <p>
+              Entering into the hole, for the first time, places the Narrator at
+              a distance, he loses his influence. And at the end of a tunnel of
+              blackness you emerge into…
+            </p>
+            <p>
+              The original office, except with no Narrator. A world without man,
+              without the patriarchal oppression. Here Stanley can once again
+              access the two doors, but he is not forced down either path. Free
+              to choose, to be with his mother, drink her milk, free from
+              society.
+            </p>
+            <p>
+              The black hole that led to this freedom…was it a vagina? Does
+              escape lie in the female body itself? Again, just repeating your
+              words.
+            </p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/Meaning5.jpg"
+              />
+            </p>
+            <p>The bookcase doesn’t mean anything.</p>
+            <p>
+              <img
+                width="100%"
+                src="./The Stanley Parable Dev Showcase_ Hidden Meaning _ Galactic-Cafe_files/Meaning1.jpg"
+              />
+            </p>
+            <p>
+              Which door will you choose? And does it matter? Whichever breast
+              you drink the life-restoring milk from, are you not simply
+              choosing your own demise? Are you not just validating the
+              institutionalized oppression of women? Simply by having breasts is
+              it expected that one conform to the rigors of a patriarchal
+              society mired in the inevitability of death and rebirth? The
+              Stanley Parable is all of these questions and none of them, one’s
+              eternal struggle against oneself, the ruination of a society
+              internally defiled by its own malicious foundation.
+            </p>
+            <p>Or to put it into a single, all-encapsulating summation:</p>
+            <p><strong>tits</strong></p>
+            <p>
+              Thank you Noel. Thank you for giving me the strength to share what
+              The Stanley Parable is really about. I hope this cleared up any
+              and all confusion.
+            </p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="pressure">
+              Stanley Parable Dev Showcase: Pressure
+            </h3>
+            <a
+              href="https://web.archive.org/web/20150910104132/http://www.galactic-cafe.com/2013/05/stanley-parable-dev-showcase-pressure/"
+              title="Permalink to Stanley Parable Dev Showcase: Pressure"
+              rel="bookmark"
+              >permalink</a
+            >
+
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/banner1.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>This week: <strong>How not to give into pressure</strong></p>
+            <p>
+              As a highly-recognized celebrity game developer, I’m under
+              constant pressure from the people around me to modify and make
+              additions to my game simply to serve their own needs. These are
+              people who think only of themselves and have little or not
+              consideration for Art. They might not even know what Art means!
+            </p>
+            <p>
+              If you came to this blog to find out what Art means, let me point
+              you to this excerpt from Dictionary.com:
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/ArtDefinition.jpg"
+              />
+            </p>
+            <p>
+              This definition is what I turn to whenever I’m uncertain about the
+              quality of my work. It gives me the strength I need to shoot down
+              other peoples’ opinions mercilessly.
+            </p>
+            <p>
+              Let’s look at one example of how I respond to pressure from the
+              public to steer the direction of Stanley Parable one way or the
+              other. Here’s a screenshot from the game’s Greenlight page:
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/Smithy.jpg"
+              />
+            </p>
+            <p>
+              See how I got all excited and acted as though I was going to use
+              Smithy’s idea?
+            </p>
+            <p>That’s because I did. It’s in the game.</p>
+            <p>It’s a great idea.</p>
+            <p>I’m not going to turn down great ideas.</p>
+            <p>
+              Here’s another example of the tough-love attitude you have to take
+              when members of the public try to get their dirty fingers all over
+              your creation.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/Spartan.jpg"
+              />
+            </p>
+            <p>Obviously this one is also going in.</p>
+            <p>
+              The guy sounds passionate about squid. Don’t you see it in his
+              words? In his words between the words? He isn’t just asking me to
+              put squid in the game, he’s telling me that for him, squid IS the
+              game. Will he play this game and see anything but squid? Or
+              rather, can he look at a squid and see anything but The Stanley
+              Parable? I can’t answer that question, nor do I intend to. All I
+              can do is bring this young boy’s dream to life.
+            </p>
+            <p>Here’s another example of a suggestion from the public:</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/benjamoose.jpg"
+              />
+            </p>
+            <p>Mr. Foots needs to be in this game.</p>
+            <p>The Stanley Parable needs Mr. Foots.</p>
+            <p>
+              Mr. Foots the mathematical wizard, deconstructor of numbers, of
+              the universe. He who sees it from all angles, who can manipulate
+              the fabric of time to his will.
+            </p>
+            <p>
+              Why is he so tall? Did he choose this height or was it forced on
+              him? Will he ever be shorter? Does he measure himself in inches or
+              in quarter-inches? These are the kinds of unanswerable questions
+              that get to the root of what Stanley Parable is all about.
+            </p>
+            <p>
+              Mr. Foots is an enigma, he sees without seeing, he knows without
+              knowing. He is everywhere and nowhere. Is it a stretch to say that
+              he IS the stanley parable? No, no it is not. No stretching
+              required.<br />
+            </p>
+            <center>
+              <br />
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/foots.jpg"
+              />
+            </center>
+            <p></p>
+            <p>Hm….</p>
+            <p>…</p>
+            <p>…</p>
+            <p>
+              These suggestions from fans, they’re so pure, so genuine…it’s like
+              they know my own game better than I do…
+            </p>
+            <p>Once again, I turn to the public for help:</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/davey.jpg"
+              />
+            </p>
+            <p>
+              Slowly, in response to my request for ideas, a cohesive picture of
+              what The Stanley Parable should be begins to emerge:
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/responses.jpg"
+              />
+            </p>
+            <p>
+              I include all of these suggestions and more, and already the game
+              feels much more cohesive. I can tell it’s coming together now,
+              it’s got life to it.
+            </p>
+            <p>But it’s still missing something.</p>
+            <p>
+              I turn to the only real source of wisdom any of us have in our
+              lives.
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/obama1.jpg"
+              />
+            </p>
+            <p>Minutes later, I get an email back:</p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/obama2.jpg"
+              />
+            </p>
+            <p>
+              At last, hope! Could this response hold the answers I’ve been
+              looking for?
+            </p>
+            <p>
+              Eagerly, I go to Dictionary.com and pull up the definition of Art:
+            </p>
+            <p>
+              <img
+                src="./Stanley Parable Dev Showcase_ Pressure _ Galactic-Cafe_files/Art-definition-2.jpg"
+              />
+            </p>
+            <p>He got me again! I’ve fallen for that one too many times.</p>
+            <p>
+              So perhaps all of my questions haven’t been answered, but that’s
+              okay. Sure, there are times when I’m uncertain of my work and
+              doubtful of my abilities, but it’s probably healthy to be at least
+              a little bit skeptical of yourself. Otherwise how would I be able
+              to accept when my work isn’t up to par? That’s why I keep good
+              friends and community close at hand, to keep me in check and watch
+              my back. It’s these friends who guide me ever on that eternal
+              voyage toward completely genuine and intensely vulnerable artistic
+              expression.
+            </p>
+            <p>
+              I’m gonna go get a picture of Mr. Foots tattooed to my forehead.
+            </p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="special-editions">
+              The Stanley Parable Dev Showcase: Special Editions
+            </h3>
+            <a
+              href="https://web.archive.org/web/20130628061019/http://www.gamasutra.com:80/blogs/DaveyWreden/20130626/195125/The_Stanley_Parable_Dev_Showcase_Special_Editions.php"
+              title="Permalink to Stanley Parable Dev Showcase: Special Editions"
+              rel="bookmark"
+              >permalink</a
+            >
+            <p>
+              <img
+                src="Gamasutra_ Davey Wreden's Blog - The Stanley Parable Dev Showcase_ Special Editions_files/banner2.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>This week: <strong>Special Edition Packages</strong></p>
+            <p>
+              Here at Galactic Cafe, we recognize that our players come from all
+              walks of life, and that each person who discovers the Stanley
+              Parable has a different set of needs and desires. How could we
+              address the variety of our players by giving them only one
+              product?
+            </p>
+            <p>
+              That is why The Stanley Parable will ship with a variety of
+              Special Edition Packages, each designed to cater to the specific
+              needs of someone somewhere. Depending on your generosity, you have
+              the option of any one of these lovingly crafted Special Edition
+              Packages, which I'm very excited to share with you today:
+            </p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE1.png"
+                alt=""
+              />
+            </p>
+            <p>
+              We will ship a 5-cent coin to your house. You pay for shipping.
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE2.png"
+                alt=""
+              />
+            </p>
+            <p>
+              We will ship you the 10-cent coin sent to us by one donor at the
+              previous price level. You pay for shipping.
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE3.png"
+                alt=""
+              />
+            </p>
+            <p>
+              We will send you both the 10-cent coin and 20-cent coin sent to us
+              by one donor at each of the previous two price levels. Instead of
+              sending them their promised rewards, we will send them a picture
+              of you in an envelope along with a note that says “You aren't
+              getting the reward we promised you because [<em
+                >your name here!</em
+              >] stole it! [<em>third-person gender-specific pronoun</em>] STOLE
+              IT FROM YOU!! HOW DO YOU FEEL?! HOW DOES IT FEEL TO KNOW THAT [<em
+                >your name here!</em
+              >] IS DRINKING YOUR TEARS RIGHT NOW?!?! YOUR BITTER, BITTER TEARS.
+              TASTE DEFEAT, MORTAL. TASTE IT AND WEEP.”
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE4.png"
+                alt=""
+              />
+            </p>
+            <p>
+              Who does that $1 donor think they are, stealing the reward
+              promised to an innocent person who paid good money? It’s sickening
+              what they think they can get away with.
+            </p>
+            <p>
+              With your $4 we will hire a hitman to intimidate the $1 donor. The
+              hitman will spend one week in a van parked in front of the
+              person’s house, staring at them 24/7 through a pair of binoculars.
+              Once during that week, they will be visible outside the van,
+              looking at the person who paid $1 and pounding one fist into their
+              other hand over and over.
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE5.png"
+                alt=""
+              />
+            </p>
+            <p>
+              The hitman from the $4 level is quite a coward, isn’t he? He’s got
+              no problem resorting to cheap bullying tactics, why? Because he
+              got paid? Oh, that’s a reason. Big fucking man over here, preying
+              on others for cash, someone ought to show him how it feels.
+            </p>
+            <p>
+              We’ll hire a second hitman to intimidate the first. The second
+              hitman trained the first hitman, so he knows all of his weaknesses
+              and vulnerabilities. During training he also taught the first
+              hitman a number of highly flawed techniques, just to have the
+              upper hand in the event that the student ever turned on the
+              teacher.
+            </p>
+            <p>That’ll show him.</p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE6.png"
+                alt=""
+              />
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              The second hitman doesn’t know it, but the person he thought he
+              was training was actually the hitman who trained HIM! After
+              educating the second hitman many years ago, the first hitman faked
+              his own death by pretending to fall into a chasm deep within a
+              Tibetan mountain. With the rest of the secret hitman society
+              believing him dead, he lived at the base of the chasm for 12
+              years. When he emerged he infiltrated the secret hitman society by
+              posing as a mail carrier. With access to the society’s record
+              books he tracked down his former pupil. Knowing that HE had taught
+              the second hitman a wide array of tactics with counter-maneuvers
+              that only he knew, that he would have an advantage over the second
+              hitman if the two ever confronted.
+            </p>
+            <p>
+              He then solicited the second hitman for hitman lessons, pretending
+              to be a rookie, knowing that it would cement in the second
+              hitman’s mind his belief that he would have the advantage over the
+              first. This security measure would ensure that if for any reason
+              anyone ever wanted to eliminate the first hitman, they would in
+              all likelihood hire his “teacher,” believing the teacher to be
+              more skilled, while in fact it was the “student” who would have
+              the upper hand and therefore have a clean break and an easy
+              getaway. Genius.
+            </p>
+            <p>
+              We will use your $15 to hire a third hitman, who’s never met
+              either of the first two. The third hitman isn’t great, but he’ll
+              train a fourth hitman (who’s blind, so he won’t know the identity
+              of his teacher in order to plot against him) to be skilled in all
+              the areas that the first hitman is weak in. Many years from now,
+              after the fourth hitman is highly trained, he and the first hitman
+              will duel. You will be sent a text description of the battle
+              written by a person with no hands.
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE7.png"
+                alt=""
+              />
+            </p>
+            <p>There is a secret fifth hitman. Stay with me.</p>
+            <p>
+              When a hitman dies, his or her name is passed onto a newly
+              anointed, unnamed hitman. When the first hitman threw himself into
+              the chasm, his secret hitman name was given to a new hitman. But
+              the first hitman had been lying about his true name all along, he
+              had given a false name to the secret hitman society. HIS teacher
+              knew this, and thus in secret, gave the first hitman’s true name
+              to a pupil who was trained in secret, away from the knowledge of
+              the rest of the clan. This is how the first hitman, posing as a
+              mail carrier, failed to notice that another hitman carried his
+              true name.
+            </p>
+            <p>
+              The fifth hitman isn’t actually very good. We’ll just hire him to
+              watch the battle between the first and fourth hitmen.
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE8.png"
+                alt=""
+              />
+            </p>
+            <p>All of the above</p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE9.png"
+                alt=""
+              />
+            </p>
+            <p>
+              Okay, scroll back up to the $15 level. See at the end that guy
+              with no hands who’s supposed to write a description of the battle
+              between the first and fourth hitman? He’s secretly the third
+              hitman in disguise, who’s actually the hitman who received the
+              first hitman’s fake name when he fell into the cavern, so he
+              formed a fake name to disguise his fake name and then cut off his
+              hands. I think he just got carried away? Not sure why he cut off
+              his hands.
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE10.png"
+                alt=""
+              />
+            </p>
+            <p>
+              There is a dance passed down by the secret hitman society that all
+              hitmen must perform when they meet in combat.
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/dance1.jpg"
+                alt=""
+              />
+            </p>
+            <p>
+              This is the dance that the first and fourth hitmen perform when
+              they square off. However, because the first hitman hid out for
+              twelve years, he did not know that the dance had been changed.
+              Instead, he performed the old dance and made this crucial mistake:
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/dance2.jpg"
+                alt=""
+              />
+            </p>
+            <p>
+              Under the rules of THIS dance, the first and fourth hitmen are now
+              married. It's the most beautiful story ever told.
+            </p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE11.png"
+                alt=""
+              />
+            </p>
+            <p>None of the above</p>
+            <p>
+              <img
+                src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/SE12.png"
+                alt=""
+              />
+            </p>
+            <p>
+              Why do hitmen have to die? Flawed techniques, faking deaths, made
+              up names, what is it all for? In the end, is it all worth it?
+            </p>
+            <p>
+              The third hitman thinks about this all the time, he struggles
+              under the weight of his own existence. And he’s been through so
+              much, I think we should do something nice for him.
+            </p>
+            <p>
+              Your $500 will go toward purchasing one week for the third hitman
+              onboard a Princess Luxury Cruise!!
+            </p>
+            <img
+              src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/cruise1.jpg"
+              alt=""
+              hspace="20"
+              vspace="20"
+              align="left"
+            />
+            <p>
+              Our Princess chefs are true culinary artists who insist on serving
+              the very finest cuisine - and it shows. Our entire fleet has been
+              inducted into the prestigious Chaîne des Rôtisseurs gastronomic
+              society. Each chef's menu is creative and the selections change
+              every day. Pair that with impeccable service and you're in for an
+              unforgettable gourmet experience.
+            </p>
+            <p style="clear: both">&nbsp;</p>
+            <img
+              src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/cruise2.jpg"
+              alt=""
+              align="right"
+              hspace="20"
+              vspace="20"
+            />
+            <p></p>
+            <p>
+              To say the nightlife onboard is entertaining is an understatement.
+              Illuminating the stage in captivating productions, our performers
+              are some of the most talented musicians, singers and dancers at
+              sea. Our Princess Signature Shows, lounge performers, movies and
+              casinos are just some of the entertainment our passengers enjoy as
+              they escape completely.
+            </p>
+            <p style="clear: both">&nbsp;</p>
+            <img
+              src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/cruise4.jpg"
+              alt=""
+              align="left"
+              hspace="20"
+              vspace="20"
+            />
+            <p>
+              The many activities onboard our ships are designed to stimulate,
+              educate, entertain, inspire and sweat - not necessarily in that
+              order. But, you can be sure we'll do our best to cover all the
+              bases. And from art auctions to yoga, this ship is loaded with fun
+              things to do.
+            </p>
+            <p style="clear: both">&nbsp;</p>
+            <img
+              src="./Gamasutra_ Davey Wreden_s Blog - The Stanley Parable Dev Showcase_ Special Editions_files/cruise3.jpg"
+              alt=""
+              align="right"
+              hspace="20"
+              vspace="20"
+            />
+            <p></p>
+            <p>
+              With Princess, young kids and teens have their own kind of fun -
+              and their own place to hang out. Our youth and teen centers are
+              fully equipped with everything from the latest video games and
+              movies, to arts and crafts, fooseball tables, board games and
+              jukeboxes. And for the littlest ones, activities like kids'
+              karaoke, pizza parties, pajama nights and more.
+            </p>
+            <p style="clear: both">
+              A Princess Cruise is the most elegant, comfortable, and refined
+              way to escape completely. There's no place like the open waters
+              for the third hitman to begin forming the memories of a lifetime.
+            </p>
+            <p>But he’ll still die one day.</p>
+            <p>We all will.</p>
+            <p>We all will.</p>
+            <p><em>This version does not include The Stanley Parable</em></p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="communication">
+              The Stanley Parable Dev Showcase: Communication
+            </h3>
+
+            <p>
+              <img
+                src="Gamasutra_ Davey Wreden's Blog - The Stanley Parable Dev Showcase_ Special Editions_files/banner2.png"
+                alt=""
+                width="100%"
+              />
+            </p>
+            <p>
+              <em
+                >The Stanley Parable Helpful Development Showcase is our way of
+                connecting you to the development of The Stanley Parable by
+                giving you a small look at what’s been going on behind the
+                scenes. Each week we’ll give you a tiny peek into what it takes
+                to make a game like The Stanley Parable, the creative challenges
+                we come up against in the course of development, and how to not
+                judge yourself as a person for the quality of choices you’ve
+                made in your own life. These are just a few of the topics we’ll
+                cover in this incredibly useful blog series.</em
+              >
+            </p>
+            <p>
+              This week:
+              <strong>Healthy communication between teammates</strong>
+            </p>
+            <p>
+              Being a team leader means prioritizing healthy communication over
+              personal feelings. For example, anyone who's ever led a creative
+              team knows the experience of having to fire someone for animal
+              brutality in the workplace. It's a dirty practice, and together
+              we'll one day eliminate it from the creative environment once and
+              for all.
+            </p>
+            <p>
+              But the act of having to confront your employees and change their
+              behavior is extremely tricky, no matter what their crime. And
+              navigating these relationships is key to being an effective
+              leader.
+            </p>
+            <p>
+              Let's look at an example:<br />Last month I gave a task to
+              <a href="#">William</a>, the level designer on Stanley Parable,
+              and this week I've decided to change the design and now everything
+              he worked on this last month is useless. When conveying this to
+              him, be sure to address the issue in as straightforward and direct
+              a manner as possible.
+            </p>
+            <p>I've decided to do that by creating a flowchart:</p>
+            <img src="Communication/Picture1.png" />
+            <p>
+              A few weeks later, William gets back to me with a response
+              flowchart, just as I trained him to:
+            </p>
+            <img src="Communication/Picture2.png" />
+            <p>
+              See this is what healthy communication between teammates is
+              supposed to look like.
+            </p>
+            <p>
+              It's like jazz, an improvisational back-and-forth between creative
+              equals. Each person supporting while also challenging the other.
+              Two supernovas dancing in the sky. Beautiful.
+            </p>
+            <p>
+              I've composed him another flowchart to help clarify the situation
+              (<a href="Communication/Picture3.png"
+                >click for the full sized version</a
+              >):
+            </p>
+            <img src="Communication/Picture3.png" />
+            <p>Another victory for healthy communication.</p>
+            <p>And here's William's response:</p>
+            <img src="Communication/Picture4.png" />
+            <p>
+              What's the responsible way to handle this situation? Is it to make
+              another flowchart? Almost certainly.
+            </p>
+            <p>
+              But what kind of leader would I be if I simply gave William
+              another flowchart to explain all of his problems? If he can't
+              discover his own inner flaws without me, how will he every learn?
+              <a href="#">How will he ever learn??</a>
+            </p>
+            <p>
+              I'm going to go into complete and total radio silence for a few
+              months, essentially conveying to William that I have disappeared
+              off the face of the earth. Perhaps in time he will find the
+              strength within him to make this entire game by himself to my own
+              personal benefit.
+            </p>
+            <p>
+              Next week: Punishing William for improper treatment of grizzly
+              bears in the workplace.
+            </p>
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="distribution">
+              The Stanley Parable Dev Showcase: Distribution
+            </h3>
+
+            <img width="100%" src="Distribution/Picture5.png" />
+            <p>
+              This week: <strong>Distribution of The Stanley Parable</strong>
+            </p>
+            <p>
+              The world of video game distribution is scary. Just look at the
+              facts:
+            </p>
+            <p>
+              In 2012 alone, 100,000 people attempted to purchase video games,
+              and yet only&nbsp;<b>1,400</b>were able too. That's down
+              from&nbsp;<b>150,000/2,300</b>&nbsp;in 2011 by a factor of
+              nearly&nbsp;<b>twice as much</b>. And as far as we can
+              tell,&nbsp;<b>every single person</b>&nbsp;who has ever purchased
+              a video game has died or will die.
+            </p>
+            <p>
+              The facts don't lie, and they're even worse at cheering you up.
+              Will video games ever win the Barrack Obama Cultural Relevance
+              award if the people who purchase them keep dying? When will it
+              end?
+            </p>
+            <img src="Distribution/Picture6.png" />
+            <p>
+              Sure, you're likely to tell me about the methods of distribution
+              we already have in place, Steam, Origin, GoG, Gamestop, robbing
+              your friend outside of Gamestop, being robbed outside of Gamestop
+              and going back in and purchasing another game, the list goes on
+              and on. But do you FEEL any safer? Of course you don't. That's
+              what video games are doing to us.
+            </p>
+            <p>There is a better way.</p>
+            <p>
+              Although the Stanley Parable secured distribution via Steam on
+              their Greenlight service, today I am announcing that we will be
+              rescinding this offer in favor of a new distribution outlet
+              created specifically for The Stanley Parable. The dark era of
+              fearing for your life every time you attempt to purchase a game is
+              over.
+            </p>
+            <p>Let me explain how our model works:</p>
+            <img src="Distribution/Picture7.png" />
+            <p>
+              Decide to buy a game. We intend to license other games for
+              purchase in the future, but until that time the only game you'll
+              be able to decide to purchase is The Stanley Parable.
+            </p>
+            <p>
+              This is the most difficult step, but it's also the most important.
+            </p>
+            <img src="Distribution/Picture8.png" />
+            <p>
+              Tattoo the name of the game you want to exactly fill the distance
+              between each of your nipples.
+            </p>
+            <p>
+              It's also encouraged that you make the tattoo as visually
+              interesting as possible, like depicting characters from the game
+              you're purchasing forming letters of the title with their body
+              (see Step 7)
+            </p>
+            <img src="Distribution/Picture9.png" />
+            <p>
+              When you wake up the next morning, you'll find a second tattoo has
+              been printed on your body in the night. The visual quality of the
+              second tattoo will correspond with that of the first, so you
+              really want to be sure that first one is up to par.
+            </p>
+            <p>
+              The second tattoo will have an address. The address has been
+              randomly selected from Google Maps. You have 2 hours to get there
+              from when you wake up. If you fail this deadline, the bomb in your
+              liver will go off. You have a bomb in your liver. The person who
+              gave you the first tattoo put it there. They work for us. Don't
+              bother going back to the tattoo parlor. It isn't there any more.
+            </p>
+            <img src="Distribution/Picture10.png" />
+            <p>
+              Go to the address. You'll see a man, or maybe a woman, or maybe
+              nobody. Either way it's a good sign, means everything's going
+              according to plan.
+            </p>
+            <p>
+              When someone or no one shows up, greet them with a printout of
+              this picture.
+            </p>
+            <img src="Distribution/Picture11.png" />
+            <p>The person is blind, they can't see it.</p>
+            <p>What were you thinking??</p>
+            <img src="Distribution/Picture12.png" />
+            <p>
+              Instead, they'll tattoo a second address on your chest below the
+              first. They didn't bring any actual tattooing equipment, so you
+              should probably expect an extraordinary amount of pain while all
+              of this is happening.
+            </p>
+            <p>
+              Also they're blind so the tattoo is probably just generally going
+              to be nonsense. Ignore the tattoo, we'll send someone to your
+              house.
+            </p>
+            <img src="Distribution/Picture13.png" />
+            <p>
+              Take a minute to think about how if you were at Gamestop right now
+              you'd be getting robbed by your friends.
+            </p>
+            <img src="Distribution/Picture14.png" />
+            <p>
+              A week later, a man will show up at your house. He'll look he's
+              just here to deliver pizza. He is. You ordered pizza.
+            </p>
+            <img src="Distribution/Picture15.png" />
+            <p>
+              A month after that, a woman will arrive who actually works for us.
+            </p>
+            <p>
+              You will present to her a 10-slide powerpoint presentation
+              detailing why you deserve to purchase the video game. Here's an
+              example of a slide you might use:
+            </p>
+            <img src="Distribution/Picture16.png" />
+            <p>
+              As she watches your presentation the woman will give you lots of
+              little patronizing laughs and roll her eyes whenever you try to
+              make a point, and at the end she'll resignedly say something like
+              “well I guess I can run it by someone for a second opinion.”
+              She'll eat something you were specifically saving for later and
+              then head out the door.
+            </p>
+            <img src="Distribution/Picture17.png" />
+            <p>
+              The woman will then make this exact same presentation to another
+              executive, who in turn will perform it for another, and another,
+              eventually circling back around to the woman who started it. By
+              this point, every member will have forgotten they ever heard the
+              speech, and so will re-hear it, re-learn it, and re-present it
+              over and over, in an endless, beautiful dance, forever.
+            </p>
+            <p>
+              Let's visualize this process for a more in-depth understanding:
+            </p>
+            <img src="Distribution/Picture19.png" /><br />
+            <img src="Distribution/Picture21.png" />
+          </article>
+          <hr class="article-separator" />
+
+          <article>
+            <h3 class="title" id="signing-off">
+              The Stanley Parable Dev Showcase: Signing Off
+            </h3>
+
+            <img width="100%" src="Distribution/Picture5.png" />
+            <p>This week: <strong>How to drop everything and quit</strong></p>
+            <p>
+              It's a question that's been asked over and over, throughout the
+              ages, by every person who's ever set out to create something:
+            </p>
+            <p>
+              <br />
+              Is now the right time<br />
+              to abandon everything I've been working on<br />
+              in an emotional rage?
+            </p>
+            <p>
+              Everyone handles this question differently. Some people flip a
+              coin, some people flip hundreds of coins in a series of
+              multi-tiered coin-flipping tournaments, and there are even people
+              who meticulously craft their own same-sided coins in order to
+              guarantee a particular outcome.
+            </p>
+            <p>
+              But these are generally considered to be ancient methodologies,
+              outdated and obsolete in this modern era. For the contemporary
+              craftsman there is only one truly reliable source for answers, one
+              that can be trusted to deliver without any concern for
+              failure:Rolf
+            </p>
+            <p>
+              Rolf lives on a 12'x12' island located in the very center of
+              Indonesia:
+            </p>
+            <img src="Signing Off/Picture22.png" />
+            <p style="background-color: black; font-size: smaller">
+              There he has a single desk and computer. He has committed himself
+              to two things: helping creatives figure out when to quit in a
+              huff, and never dying. Rolf will be there for our children, and
+              our children's children, and the people our children's children
+              dress up in children's clothing to impersonate their biological
+              children.
+            </p>
+            <p>
+              Rolf is single-handedly responsible for nearly every major
+              decision to completely abandon one's work in a violent rage over
+              the last 4 decades or so. He's become a touchstone in the creative
+              community, and to speak personally for a moment, he's shaped my
+              own development process in countless ways.
+            </p>
+            <p>
+              Here, for a minute let me share with you some of the exchanges
+              between myself and Rolf that demonstrate the impact he's had on my
+              game development:
+            </p>
+            <img src="Signing Off/Picture23.png" />
+            <p>
+              Rolf didn't give me an answer because he knew that the real answer
+              was inside of me, that I had to search deep within myself for the
+              true path forward. I didn't quit development on that day, because
+              Rolf taught me to think for myself, to not give up on my pursuits.
+            </p>
+            <p>
+              And your questions don't always need to be just about the right
+              time to quit everything you're doing, Rolf is delighted to answer
+              any questions you may have!
+            </p>
+            <img src="Signing Off/Picture24.png" />
+            <p>Rolf is wisdom, Rolf is guidance.</p>
+            <p>Here's a more recent email exchange between the two of us:</p>
+            <img src="Signing Off/Picture25.png" /><br />
+            <img src="Signing Off/Picture26.png" />
+            <p>
+              Just as always, Rolf had the perfect solution to all of my
+              problems.
+            </p>
+            <p>
+              The only hard part now is going to be putting it all into action.
+              And I think I know just where to start.
+            </p>
+            <img src="Signing Off/Picture27.png" /><br />
+            <img src="Signing Off/Picture28.png" />
+            <p>My work is complete.</p>
+            <p>I've done everything I could.</p>
+            <p>All I need now is the final approval from Rolf.</p>
+            <p>He alone knows whether I can quit.</p>
+            <p>Whether I can abandon the HDS recklessly.</p>
+            <p>Have I done enough?</p>
+            <p>When his email arrives I tear it open with shaking hands:</p>
+            <img src="Signing Off/Picture29.png" /><br />
+            <img src="Signing Off/Picture30.png" />
+            <p style="font-size: smaller">
+              The Helpful Development Showcase has been so much fun to make and
+              to share with all of you I couldn't even possibly say. Thank you
+              for joining me on this little experiment! There are many more
+              experiments out there left to tackle, and right now I've got a big
+              one left to wrap up. The Stanley Parable will be done before too
+              much longer, and I'm absolutely bursting to share it with you all.
+            </p>
+            <p style="font-size: smaller">
+              So that's where I am going to be putting all my time and energy
+              for the next few months, into finishing the game. We've been
+              working on this thing for quite a long time, and I'm just about
+              ready to put it to a close.<br />
+              Let's make a video game. Let's make a video game.
+            </p>
+            <p style="font-size: smaller">Love y'all!</p>
+            <p style="font-size: smaller">&lt;3</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
